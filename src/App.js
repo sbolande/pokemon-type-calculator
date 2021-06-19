@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import './App.css';
 import {Result} from './Result';
@@ -14,15 +14,14 @@ border-bottom: 1px solid #dddddd;
 `;
 
 function App() {
+  const [typeOne, setTypeOne] = useState("");
+  const [typeTwo, setTypeTwo] = useState("");
+
+  useEffect(() => console.log(`T1: ${typeOne} | T2: ${typeTwo}`), [typeOne, typeTwo]);
+
   function changeType() {
-    var typeOne = document.forms.typeForm.elements.typeOne.value;
-    var typeTwo = document.forms.typeForm.elements.typeTwo.value;
-    if (typeOne === "") typeOne = null;
-    if (typeTwo === "") typeTwo = null;
-    console.log(typeOne);
-    console.log(typeTwo);
-    var results = document.getElementById('results');
-    results = <Result typeOne={typeOne} typeTwo={typeTwo}></Result>;
+    setTypeOne(document.forms.typeForm.elements.typeOne.value);
+    setTypeTwo(document.forms.typeForm.elements.typeTwo.value);
   };
 
   return (
@@ -32,24 +31,24 @@ function App() {
           Type 1:&nbsp;
           <select list="types" name="typeOne" onChange={changeType}>
             <option hidden disabled selected value=""> -- select an option -- </option>
-            <option value="Normal">Normal</option>
-            <option value="Fire">Fire</option>
-            <option value="Water">Water</option>
-            <option value="Grass">Grass</option>
-            <option value="Electric">Electric</option>
-            <option value="Ice">Ice</option>
-            <option value="Fighting">Fighting</option>
-            <option value="Poison">Poison</option>
-            <option value="Ground">Ground</option>
-            <option value="Flying">Flying</option>
-            <option value="Psychic">Psychic</option>
-            <option value="Bug">Bug</option>
-            <option value="Rock">Rock</option>
-            <option value="Ghost">Ghost</option>
-            <option value="Dragon">Dragon</option>
-            <option value="Dark">Dark</option>
-            <option value="Steel">Steel</option>
-            <option value="Fairy">Fairy</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+            <option value="ice">Ice</option>
+            <option value="fighting">Fighting</option>
+            <option value="poison">Poison</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+            <option value="psychic">Psychic</option>
+            <option value="bug">Bug</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+            <option value="dark">Dark</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
           </select>
         </label>
         <br/>
@@ -58,24 +57,24 @@ function App() {
           <select list="types" name="typeTwo" onChange={changeType}>
             <option hidden disabled selected value=""> -- select an option -- </option>
             <option value="">None</option>
-            <option value="Normal">Normal</option>
-            <option value="Fire">Fire</option>
-            <option value="Water">Water</option>
-            <option value="Grass">Grass</option>
-            <option value="Electric">Electric</option>
-            <option value="Ice">Ice</option>
-            <option value="Fighting">Fighting</option>
-            <option value="Poison">Poison</option>
-            <option value="Ground">Ground</option>
-            <option value="Flying">Flying</option>
-            <option value="Psychic">Psychic</option>
-            <option value="Bug">Bug</option>
-            <option value="Rock">Rock</option>
-            <option value="Ghost">Ghost</option>
-            <option value="Dragon">Dragon</option>
-            <option value="Dark">Dark</option>
-            <option value="Steel">Steel</option>
-            <option value="Fairy">Fairy</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+            <option value="ice">Ice</option>
+            <option value="fighting">Fighting</option>
+            <option value="poison">Poison</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+            <option value="psychic">Psychic</option>
+            <option value="bug">Bug</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+            <option value="dark">Dark</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
           </select>
         </label>
       </form>
@@ -90,7 +89,7 @@ function App() {
             <TableHeader>&#215;0</TableHeader>
           </tr>
         </thead>
-        <Result id="results"></Result>
+        <Result id="results" typeOne={typeOne} typeTwo={typeTwo}></Result>
       </Table>
     </React.Fragment>
   );
