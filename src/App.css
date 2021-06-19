@@ -37,6 +37,14 @@
   }
 }
 
+select {
+  margin: 5px;
+  text-align: center;
+  border-radius: 50px;
+  height: 30px;
+  text-align: center;
+}
+
 .normal { background-color: #A8A77A; }
 .fire { background-color: #EE8130; }
 .water { background-color: #6390F0; }
