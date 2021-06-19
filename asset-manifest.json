@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pokemon-type-calculator/static/css/main.d14ec7da.chunk.css",
-    "main.js": "/pokemon-type-calculator/static/js/main.a41aeeff.chunk.js",
-    "main.js.map": "/pokemon-type-calculator/static/js/main.a41aeeff.chunk.js.map",
-    "runtime-main.js": "/pokemon-type-calculator/static/js/runtime-main.f337384d.js",
-    "runtime-main.js.map": "/pokemon-type-calculator/static/js/runtime-main.f337384d.js.map",
-    "static/js/2.1d737601.chunk.js": "/pokemon-type-calculator/static/js/2.1d737601.chunk.js",
-    "static/js/2.1d737601.chunk.js.map": "/pokemon-type-calculator/static/js/2.1d737601.chunk.js.map",
-    "index.html": "/pokemon-type-calculator/index.html",
-    "static/css/main.d14ec7da.chunk.css.map": "/pokemon-type-calculator/static/css/main.d14ec7da.chunk.css.map",
-    "static/js/2.1d737601.chunk.js.LICENSE.txt": "/pokemon-type-calculator/static/js/2.1d737601.chunk.js.LICENSE.txt"
+    "main.css": "/pokemon-type-calculator/index/static/css/main.d14ec7da.chunk.css",
+    "main.js": "/pokemon-type-calculator/index/static/js/main.a41aeeff.chunk.js",
+    "main.js.map": "/pokemon-type-calculator/index/static/js/main.a41aeeff.chunk.js.map",
+    "runtime-main.js": "/pokemon-type-calculator/index/static/js/runtime-main.7a4da273.js",
+    "runtime-main.js.map": "/pokemon-type-calculator/index/static/js/runtime-main.7a4da273.js.map",
+    "static/js/2.d7647cdd.chunk.js": "/pokemon-type-calculator/index/static/js/2.d7647cdd.chunk.js",
+    "static/js/2.d7647cdd.chunk.js.map": "/pokemon-type-calculator/index/static/js/2.d7647cdd.chunk.js.map",
+    "index.html": "/pokemon-type-calculator/index/index.html",
+    "static/css/main.d14ec7da.chunk.css.map": "/pokemon-type-calculator/index/static/css/main.d14ec7da.chunk.css.map",
+    "static/js/2.d7647cdd.chunk.js.LICENSE.txt": "/pokemon-type-calculator/index/static/js/2.d7647cdd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f337384d.js",
-    "static/js/2.1d737601.chunk.js",
+    "static/js/runtime-main.7a4da273.js",
+    "static/js/2.d7647cdd.chunk.js",
     "static/css/main.d14ec7da.chunk.css",
     "static/js/main.a41aeeff.chunk.js"
   ]
